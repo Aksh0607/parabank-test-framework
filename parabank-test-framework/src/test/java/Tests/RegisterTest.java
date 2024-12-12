@@ -11,29 +11,26 @@ import utils.Links;
 @Listeners(ExtentReportListener.class)
 public class RegisterTest extends BaseTest {
 
-    @Test
-    public void registerNewUser() {
-        
-        driver.get(Links.BASE_URL);
+	@Test
+	public void registerNewUser() {
 
-        
-        RegisterPage registerPage = new RegisterPage(driver);
+		driver.get(Links.REGISTRATION_PAGE_URL);
 
-        
-        registerPage.enterFirstName("Jane");
-        registerPage.enterLastName("Doe");
-        registerPage.enterStreet("123 Main St");
-        registerPage.enterCity("SampleCity");
-        registerPage.enterState("SampleState");
-        registerPage.enterZipCode("12345");
-        registerPage.enterPhoneNumber("1234567890");
-        registerPage.enterSSN("123-45-6789");
-        registerPage.enterUsername("jane.doe");
-        registerPage.enterPassword("password123");
-        registerPage.enterRepeatedPassword("password123");
-        registerPage.clickRegisterButton();
+		RegisterPage registerPage = new RegisterPage(driver);
 
-        
-        Assert.assertTrue(registerPage.isRegistrationSuccessful());
-    }
+		registerPage.enterFirstName("Jane");
+		registerPage.enterLastName("Doe");
+		registerPage.enterStreet("123 Main St");
+		registerPage.enterCity("SampleCity");
+		registerPage.enterState("SampleState");
+		registerPage.enterZipCode("12345");
+		registerPage.enterPhoneNumber("1234567890");
+		registerPage.enterSSN("123-45-6789");
+		registerPage.enterUsername("jane.doe");
+		registerPage.enterPassword("password123");
+		registerPage.enterRepeatedPassword("password123");
+		registerPage.clickRegisterButton();
+
+		Assert.assertTrue(registerPage.isRegistrationSuccessful());
+	}
 }

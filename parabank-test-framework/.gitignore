@@ -11,3 +11,4 @@
 *.prefs
 *.dat
 
+/target/
