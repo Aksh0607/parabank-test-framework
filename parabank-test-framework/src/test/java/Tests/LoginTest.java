@@ -4,7 +4,9 @@ import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+import listeners.ExtentReportListener;
 import pages.LoginPage;
+import utils.Links;
 
 @Listeners(ExtentReportListener.class)
 public class LoginTest extends BaseTest {
@@ -12,7 +14,7 @@ public class LoginTest extends BaseTest {
 	@Test
 	public void verifyInvalidLogin() {
 		LoginPage loginPage = new LoginPage(driver);
-		driver.get("https://parabank.parasoft.com/parabank/index.htm");
+		driver.get(Links.BASE_URL);
 		loginPage.enterUsername("jane.doe");
 		loginPage.enterPassword("password123456");
 		loginPage.clickSubmit();

@@ -3,7 +3,10 @@ package Tests;
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+
+import listeners.ExtentReportListener;
 import pages.RegisterPage;
+import utils.Links;
 
 @Listeners(ExtentReportListener.class)
 public class RegisterTest extends BaseTest {
@@ -11,7 +14,7 @@ public class RegisterTest extends BaseTest {
     @Test
     public void registerNewUser() {
         
-        driver.get("https://parabank.parasoft.com/parabank/register.htm");
+        driver.get(Links.BASE_URL);
 
         
         RegisterPage registerPage = new RegisterPage(driver);
