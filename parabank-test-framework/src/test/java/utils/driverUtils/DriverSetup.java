@@ -1,4 +1,4 @@
-package driverUtils;
+package utils.driverUtils;
 
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;

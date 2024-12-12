@@ -1,10 +1,11 @@
-package driverUtils;
+package utils.driverUtils;
 
+
+import static utils.driverUtils.DriverType.CHROME;
+import static utils.driverUtils.DriverType.valueOf;
 
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import static driverUtils.DriverType.CHROME;
-import static driverUtils.DriverType.valueOf;
 
 public class DriverFactory {
 

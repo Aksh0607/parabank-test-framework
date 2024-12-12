@@ -1,4 +1,4 @@
-package driverUtils;
+package utils.driverUtils;
 
 import java.util.HashMap;
 
