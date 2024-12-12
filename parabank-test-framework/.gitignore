@@ -1,5 +1,16 @@
 "test-output/" 
 "target/" 
-".settings/" 
 ".classpath" 
 ".project" 
+/target/
+.metadata/
+*.lock
+*.log
+.history/
+.indexes/
+.plugins/
+.settings/
+*.prefs
+*.dat
+*.xml
+
