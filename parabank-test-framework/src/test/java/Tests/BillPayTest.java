@@ -12,7 +12,7 @@ import utils.Links;
 @Listeners(ExtentReportListener.class)
 public class BillPayTest extends BaseTest{
 	
-	@Test
+	@Test(priority = 3)
 	public void testBillPayment() throws Exception {
 		driver.get(Links.BASE_URL);
 		LoginPage loginPage = new LoginPage(driver);

@@ -11,7 +11,7 @@ import utils.Links;
 @Listeners(ExtentReportListener.class)
 public class RegisterTest extends BaseTest {
 
-	@Test
+	@Test(priority = 1)
 	public void registerNewUser() {
 
 		driver.get(Links.REGISTRATION_PAGE_URL);

@@ -11,7 +11,7 @@ import utils.Links;
 @Listeners(ExtentReportListener.class)
 public class LoginTest extends BaseTest {
 
-	@Test
+	@Test(priority = 2)
 	public void verifyInvalidLogin() {
 		LoginPage loginPage = new LoginPage(driver);
 		driver.get(Links.BASE_URL);
